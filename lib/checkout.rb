@@ -5,7 +5,7 @@ class Shop
   end
 
   private
-  
+
   def item_price
     {
       'A' => 50,
@@ -21,7 +21,11 @@ class Shop
       total_price = -1
     else
      item_price.each {|item, price|
-      total_price += sku.scan(item).count * price
+      if item == 'A' && sku.scan(item).count >= 3
+        total_price += (sku.scan(item).count)/ 3 * 130
+      else
+        total_price += sku.scan(item).count * price
+      end
     }
     end
     total_price
