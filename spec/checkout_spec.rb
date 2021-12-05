@@ -7,4 +7,7 @@ describe Shop do
   it 'returns price for valid single item B' do
     expect(subject.checkout('B')).to eq 30
   end
+  it 'returns price for valid single item C' do
+    expect(subject.checkout('C')).to eq 20
+  end
 end
