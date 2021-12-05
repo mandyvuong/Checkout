@@ -1,11 +1,21 @@
 class Shop
+
   def checkout(sku)
-    item_price = {
-    'A' => 50,
-    'B' => 30,
-    'C' => 20,
-    'D' => 15
-  }
+    item_price_calculation(sku)
+  end
+
+  private
+  
+  def item_price
+    {
+      'A' => 50,
+      'B' => 30,
+      'C' => 20,
+      'D' => 15
+    }
+  end
+
+  def item_price_calculation(sku)
     total_price = 0
     if !sku.match?(/[ABCD]/)
       total_price = -1
@@ -13,7 +23,7 @@ class Shop
      item_price.each {|item, price|
       total_price += sku.scan(item).count * price
     }
-  end
+    end
     total_price
   end
 end
