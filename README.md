@@ -42,16 +42,16 @@ shop.checkout('AAAAAA') # => 260
 
 ## Plan
 
-| Input shop.checkout(SKUs) | Output | Description             |
-| ------------------------- | ------ | ----------------------- |
-| 'A'                       | 50     | single item A           |
-| 'B'                       | 30     | single item B           |
-| 'C'                       | 20     | single item C           |
-| 'D'                       | 15     | single item D           |
-| 'a'                       | -1     | invalid item            |
-| 'AA'                      | 100    | multiple item A         |
-| 'ABCD'                    | 115    | multiple items          |
-| 'AAA'                     | 130    | multiple item A on deal |
-| 'BB'                      | 45     | multiple item B on deal |
+| Input shop.checkout(SKUs) | Output | Description                                    |
+| ------------------------- | ------ | ---------------------------------------------- |
+| 'A'                       | 50     | returns price for valid single item A          |
+| 'B'                       | 30     | returns price for valid single item B          |
+| 'C'                       | 20     | returns price for valid single item C          |
+| 'D'                       | 15     | returns price for valid single item D          |
+| 'a'                       | -1     | returns -1 for invalid item                    |
+| 'AA'                      | 100    | returns price for multiple item A              |
+| 'ABCD'                    | 115    | return price for multiple items                |
+| 'AAA'                     | 130    | return price for multiple item A thats on deal |
+| 'BB'                      | 45     | return price for multiple item B thats on deal |
 
 ## Note

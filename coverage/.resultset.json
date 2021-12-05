@@ -1,7 +1,27 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/amandavuong/Dropbox/projects/postcourse/ruby/process_workshops/checkout/spec/checkout_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/amandavuong/Dropbox/projects/postcourse/ruby/process_workshops/checkout/lib/checkout.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1638736485
+    "timestamp": 1638737455
   }
 }
