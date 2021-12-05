@@ -23,6 +23,8 @@ class Shop
      item_price.each {|item, price|
       if item == 'A' && sku.scan(item).count >= 3
         total_price += (sku.scan(item).count)/ 3 * 130
+      elsif item == 'B' && sku.scan(item).count >= 2
+        total_price += (sku.scan(item).count)/ 2 * 45
       else
         total_price += sku.scan(item).count * price
       end
