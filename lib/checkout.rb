@@ -1,5 +1,5 @@
 class Shop
   def checkout(sku)
-    50
+    sku == 'A' ? 50 : 30
   end
 end
