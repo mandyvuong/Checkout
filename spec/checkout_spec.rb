@@ -28,4 +28,7 @@ describe Shop do
   it 'return price for multiple item B thats on deal' do
     expect(subject.checkout('BB')).to eq 45
   end
+  it 'return price for 2 multiple item A thats on deal' do
+    expect(subject.checkout('AAAAAA')).to eq 260
+  end
 end
