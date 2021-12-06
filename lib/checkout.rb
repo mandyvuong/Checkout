@@ -17,19 +17,17 @@ class Shop
 
   def item_price_calculation(sku)
     total_price = 0
-    if !sku.match?(/[ABCD]/)
-      total_price = -1
-    else
-     item_price.each {|item, price|
-      if item == 'A' && sku.scan(item).count >= 3
-        total_price += (sku.scan(item).count)/ 3 * 130
-      elsif item == 'B' && sku.scan(item).count >= 2
-        total_price += (sku.scan(item).count)/ 2 * 45
+    total_price = -1 if !sku.match?(/[ABCD]/)
+    item_price.each {|item, price|
+      count = sku.scan(item).count
+      if item == 'A' && count >= 3
+        total_price += (count)/ 3 * 130
+      elsif item == 'B' && count >= 2
+        total_price += (count)/ 2 * 45
       else
-        total_price += sku.scan(item).count * price
+        total_price += count * price
       end
     }
-    end
     total_price
   end
 end
