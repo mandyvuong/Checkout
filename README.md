@@ -55,3 +55,7 @@ shop.checkout('AAAAAA') # => 260
 | 'BB'                      | 45     | return price for multiple item B thats on deal |
 
 ## Note
+
+This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshops challenges.
+
+This challenge is in progress as I need to implement more complex tests and refactor
